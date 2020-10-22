@@ -63,7 +63,7 @@ with open(filepath.name, 'r') as f:
     for line in f.readlines():
         try:
             print(f" > {line.strip()}")
-            emailandpass = line.strip().split(':') #using rstrip to remove the \n
+            emailandpass = line.strip().split(':') 
             email = emailandpass[0]
             password = emailandpass[1]
             f = open(nameoffinalfile, "a")
